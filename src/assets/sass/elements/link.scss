@@ -1,0 +1,14 @@
+@import '../variables.scss';
+[class*='link--'] {
+text-decoration: none;
+ }
+
+ @each $color in $app-colors {
+  [class*='link--'][class*=#{nth($color,1)}]{
+
+    color: nth($color,2);
+    text-shadow: 0 1px 2px rgba(3, 3, 3, 0.87);
+
+    ;
+  }    
+}

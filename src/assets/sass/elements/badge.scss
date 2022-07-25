@@ -1,0 +1,43 @@
+// @import '../mixins/mixins.scss';
+@import '../variables.scss';
+
+[class*='badge--'] {
+ width: min-content;
+ padding: 2px 9px;
+ border-radius: 9px;
+ font-size: 0.9rem;
+ margin: 5px;
+ vertical-align: middle;
+ text-align: center;
+ text-shadow: 0 1px 1px rgba($color: #2e2e2e, $alpha: 0.9);
+}
+
+
+[class*='badge--'][class*='small']{
+  font-size: 0.75rem;
+  padding: 3px 5px;
+  border-radius: 5px;
+} 
+
+[class*='badge--'][class*='big']{
+  font-size: 1rem;
+  padding: 4px 7px;
+  border-radius: 10px;
+} 
+
+[class*='badge--'][class*='--circle']{
+
+  border-radius: 50%;
+  padding: 5px 10px;
+} 
+  @each $color in $app-colors {
+    [class*='badge--'][class*=#{nth($color,1)}]{
+
+      background-color: nth($color,2);
+      box-shadow: 0 1px 32px -4px #111111 inset, 0 1px 2px darken($color: nth($color,2), $amount:20%), 
+      0 2px 2px 1px black, 0 -1px 1px 1px rgba(0, 0, 0, 0.26);
+      ;
+    }    
+  }
+
+  // TODO doda circle styles

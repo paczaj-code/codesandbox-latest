@@ -1,0 +1,51 @@
+@import '/mixins/mixins.scss';
+@import './variables.scss';
+@import './elements/badge.scss';
+@import './elements/link.scss';
+@import './elements/heading.scss';
+ * {
+  margin: 0;
+  padding: 0;
+}
+html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  background-color: #2e2e2e;
+  background-image:
+  linear-gradient(rgba(44, 52, 70, 0.473) 0%,rgba(11, 13, 39, 0.164) 100%),
+  url("https://www.transparenttextures.com/patterns/black-orchid.png");
+  color:$basic-font-color;
+  background-attachment: fixed;
+  font-family: 'Rubik', sans-serif;
+  text-shadow: none;
+}
+
+
+#root{
+  height: 500px;
+
+  display: flex;
+  gap: 100px;
+  justify-content: center ;
+
+  // flex-basis: 100%;
+  // flex-grow: 1;
+  // flex-shrink: 1;
+  // align-content: center;
+}
+
+.app--wrapper{
+  max-width: 400px;
+// display:flex;
+}
+
+
+
+
+

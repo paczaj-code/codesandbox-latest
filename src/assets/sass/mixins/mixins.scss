@@ -1,0 +1,11 @@
+// @mixin elemets-gradient($color){
+//   background: linear-gradient($color, darken($color, 30%) )
+// }
+
+
+
+// @mixin linear-gradient($direction, $color-stops...) {
+//   background: nth(nth($color-stops, 1), 1);
+//   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+//   background: linear-gradient($direction, $color-stops);
+// }
